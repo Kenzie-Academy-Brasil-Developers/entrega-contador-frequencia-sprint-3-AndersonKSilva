@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+.container_principal{
+    width: 100%;
+}
+.container_secundario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_principal h1{
+    font-size: 30px;
+}
+#textInput{
+    margin: 0px;
+    padding: 0px;
+    max-width: 317px;
+    align-self: center;
+}
+#contButton{
+    width: 104px;
+    align-self: center;
+}
+#lettersDiv, #wordsDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* max-width: 317px; */
+    min-width: 317px;
+    height: 250px;
+    border: 1px solid black;
+}
+#wordsDiv{
+    height: 300px;
+}
+@media only screen and (max-width:749){
+    #lettersDiv, #wordsDiv{
+        max-width: 317px;
+    }
+}
+@media only screen and (min-width:750px){
+    .container_secundario{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #wordsDiv{
+        height: 250px;
+        width: 400px;
+    }
+}
